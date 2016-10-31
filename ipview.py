@@ -9,7 +9,7 @@ ipcnurl = "http://ip.cn/index.php?ip=" + ip
 response = urllib2.urlopen(ipcnurl)
 res = response.read()
 
-pattern = "(您查询的 IP：<code>((([2]?[0-5]?[0-5]\.)|([1]?[0-9]?[0-9]\.)){3}(([2]?[0-5]?[0-5]\.)|([1]?[0-9]?[0-9]))))"
+pattern = "(您查询的 IP：<code>((([2][5][0-5])|([2][0-4][0-9]\.)|([1]?[0-9]?[0-9]\.)){3}(([2][5][0-5])|([2][0-4][0-9])|([1]?[0-9]?[0-9]))))"
 r = re.findall(pattern,res)
 for i in r:
     print i[1],
