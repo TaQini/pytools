@@ -15,6 +15,20 @@ Usage: ./ccc.py [cmlwLCh] filename
 
 ## ipview - show ip and location
 ```
-Usage: 
-  ./ipview.py [addr]
+Usage: ./ipview.py [addr]
 ```
+
+
+## bin - Transform decimal integer to binary string 
+```
+Usage: ./bin.py [gih] integer
+-g, --graph         print the graph of decimal integer
+-i, --interactive   use interactive mode
+-i, --help          print this page
+
+Example: 
+     ./bin.py 9
+     ./bin.py -g 9
+     ./bin.py -gi
+```
+
